@@ -1,0 +1,460 @@
+/* You can add global styles to this file, and also import other style files */
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /**reset para rem**/
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-around;
+    min-height: 5rem;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    background-color: black;
+  }
+  header .logo {
+    font-size: 3rem;
+    font-weight: bold;
+    border: 0.3rem solid black;
+    border-radius: 1rem;
+    min-width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+  }
+  header nav {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+  }
+  header nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+  }
+
+  
+  
+  .inicio {
+    position: relative;
+    height: 90rem;
+    background-image: url(assets/img/3.jpg);
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+    position: relative;
+    z-index: 1;
+  }
+  
+  .inicio::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .inicio-cont {
+    display: flex;
+    position: relative;
+    z-index: 1;
+  }
+  .inicio-izq {
+    width: 50%;
+    min-height: 75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5rem;
+    color: white;
+  }
+  .inicio-cont .inicio-izq .inicio-button {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 4rem;
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    background-color: green;
+    width: 50%;
+    min-height: 4rem;
+    color: white;
+    text-decoration: none;
+  }
+  .inicio-der {
+    width: 50%;
+    min-height: 75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .flex {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .habilidades {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .habilidades h2 {
+    font-size: 4rem;
+    color: black;
+  }
+  
+  #hex {
+    height: 50rem;
+    margin: -3em 0;
+    overflow: hidden;
+    transform: rotate(120deg);
+    visibility: hidden;
+    width: 25rem;
+    position: relative;
+    margin-right: 0.8rem;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  #hex-1 {
+    height: 100%;
+    overflow: hidden;
+    transform: rotate(-60deg);
+    width: 100%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  #hex-2 {
+    height: 100%;
+    transform: rotate(-60deg);
+    visibility: visible;
+    width: 100%;
+    position: relative;
+    background-image: url(assets/img/1.jpg);/*img/1.jpg*/
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+    position: relative;
+  }
+  
+  #hex-2::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  #mensaje {
+    text-align: center;
+    position: absolute;
+    top: 20rem;
+    color: white;
+    z-index: 1;
+  }
+  
+  #mensaje2 {
+    text-align: center;
+    position: absolute;
+    top: 22rem;
+    color: white;
+    width: 50%;
+    list-style: none;
+    right: 9rem;
+    z-index: 1;
+  }
+  
+  #mensaje3 {
+    text-align: center;
+    position: absolute;
+    top: 15rem;
+    color: white;
+    font-size: 8rem;
+    z-index: 1;
+  }
+  
+  .trabajos {
+    position: relative;
+    min-height: 30rem;
+    z-index: 1;
+  }
+  .trabajos .cont-trabajos {
+    position: relative;
+    z-index: 1;
+    color: white;
+  }
+  
+  .trabajos::after {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .flex-trabajo {
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+  }
+  
+  .cont-cadatrabajo {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .flex-cadatrabajo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .img-trabajos {
+    width: 30%;
+  }
+  
+  .conoceme {
+    position: relative;
+    min-height: 60rem;
+  }
+  
+  .cont-conoceme {
+    max-width: 100%;
+    margin: 0 10rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .conoceme-der {
+    position: relative;
+    right: 20rem;
+    width: 110rem;
+  }
+  
+  .flex-conoceme {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .img-conoceme {
+    max-width: 50rem;
+  }
+  
+  .contacto {
+    position: relative;
+    min-height: 60rem;
+    width: 100%;
+  }
+  
+  .contacto::after {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .flex-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+    z-index: 1;
+    padding: 5rem;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    border: 1rem solid white;
+    border-radius: 2rem;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+    margin: 5rem;
+    padding: 5rem;
+  }
+  .card input {
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 1rem 2rem;
+  }
+  .card .mas {
+    height: 10rem;
+    box-sizing: border-box;
+    resize: none;
+  }
+  
+  footer {
+    position: relative;
+  
+    z-index: 1;
+  }
+  
+  footer::after {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .redes {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    z-index: 1;
+  }
+  .redes a {
+    text-decoration: none;
+  }
+  .redes a i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    font-size: 25rem;
+    
+    border-radius: 5rem;
+    width: 30rem;
+    height: 40rem;
+    color: white;
+    background: rgb(34,195,109);
+    background: linear-gradient(0deg, rgba(34,195,109,1) 0%, rgba(8,5,0,1) 100%);
+    margin: 3rem;
+  }
+  
+  .foot {
+    display: flex;
+    justify-content: space-around;
+    
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding: 1rem;
+  }
+  @media (max-width: 730px) {
+    header{
+      flex-direction: column;
+      align-items: center;
+    }
+    header nav {
+      margin-top: 1rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    header nav a {
+      margin: 1rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .inicio-cont{
+      width: 100%
+    }
+    .inicio-izq {
+      width: 100%;
+    }
+    .inicio-der{
+      width: 0%;
+    }
+    .button {
+    width: 80%;
+    }
+    .foot{
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+    .flex{
+      flex-direction: column;
+      align-items: center;
+    }
+    .flex-cadatrabajo{
+      flex-direction: column;
+    }
+    .img-trabajos{
+      width: 90%;
+    }
+    #hex{
+      margin: -5em 0;
+    }
+    .flex-trabajo{
+      padding: 1rem;
+    }
+    .cont-conoceme {
+      width: 100%;
+      flex-direction: column-reverse;
+      margin: 0;
+    }
+    h2{
+      text-align: center;
+    }
+    .img-conoceme  {
+      width: 100%;
+      
+    }
+    .conoceme-der{
+      width: 100%;
+      right: 0;
+    }
+    .redes{
+      flex-direction: column;
+    }
+    .redes a i {
+      font-size: 12rem;
+      width: 15rem;
+      height: 20rem;
+      
+    }
+  }
+
+  
+  /*# sourceMappingURL=style.css.map */
+  
